@@ -36,4 +36,9 @@ public class Enemy : MonoBehaviour
         }
         spriter.flipX = target.position.x < rigid.position.x;
     }
+
+    private void OnEnable()//활성화될때 
+    {
+        target=GameManager.instance.player.GetComponent<Rigidbody2D>();
+    }
 }
