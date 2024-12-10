@@ -18,7 +18,7 @@ public class PoolManager : MonoBehaviour
         {
             pools[index]= new List<GameObject>();//풀리스트를 초기화
 
-            Debug.Log(pools.Length);
+            //Debug.Log(pools.Length);
         }
     }
 
